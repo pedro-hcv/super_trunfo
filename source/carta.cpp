@@ -8,6 +8,9 @@ std::string Carta::getNome(){
     return nome;
 };
 
+
+
+
 void Carta::setGols(int g){
     gols = g;
 };

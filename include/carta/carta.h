@@ -5,8 +5,9 @@
 
 
 class Carta{
+    //std::string identidade;
     std::string nome;
-
+    //int int_nome;
     int gols;
     int assistencias;
     int velocidade;
@@ -14,10 +15,17 @@ class Carta{
     int trofeus;
     
     public:
-        //Carta()
+        //Carta(std::string nm, int inome, int gols)
+
+        //void setIdentidade(std::string nm);
+        //std::string getIdentidade();
+
         void setNome(std::string nm);
         std::string getNome();
 
+        /* void setInt_nome(int inome);
+        int getInt_nome();        
+ */
         void setGols(int g);
         int getGols();
 
