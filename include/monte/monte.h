@@ -4,7 +4,7 @@
 #include <baralho/baralho>
 
 class Monte : public Baralho{
-
+    
 
 };
 

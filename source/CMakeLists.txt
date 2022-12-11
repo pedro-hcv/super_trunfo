@@ -1,5 +1,5 @@
 
-add_library(${PROJECT_NAME} carta.cpp baralho.cpp jogo.cpp)
+add_library(${PROJECT_NAME} carta.cpp baralho.cpp jogo.cpp interface.cpp)
 
 include(GenerateExportHeader)
 generate_export_header(${PROJECT_NAME})
