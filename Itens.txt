@@ -1,0 +1,9 @@
+Classes Atributos e Métodos: "jogo.h" linha 6
+
+Sobrecarga  de Operadores: "baralho.h" linha 27, implementação em "baralho.cpp" linha 124
+
+Associação: "jogo.h" linha 8
+
+Herança: "interface.h" linha 7
+
+Polimorfismo "interface.h" linha 11 implementada em "interface.cpp" linha 9 com "jogo.h" linha 16 e implementada em "jogo.cpp" linha 36
