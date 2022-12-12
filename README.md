@@ -1,5 +1,5 @@
 # Super Trunfo Copa do Mundo 2022
-Trabalho de programação 3 - Pedro e André
+Trabalho de programação 3 - Pedro Hernique de Carvalho e André Becker
 
 # :hammer: Início do jogo:
 
