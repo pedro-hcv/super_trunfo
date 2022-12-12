@@ -15,9 +15,9 @@ void Jogo::distribuir_cartas(){
             std::cin >> nome;
             Nomes_dos_jogadores.push_back(nome);
         }
-        //std::random_device rd;
-        //std::mt19937 generator(rd());
-        //std::shuffle(Nomes_dos_jogadores.begin(), Nomes_dos_jogadores.end(), generator);
+        std::random_device rd;
+        std::mt19937 generator(rd());
+        std::shuffle(Nomes_dos_jogadores.begin(), Nomes_dos_jogadores.end(), generator);
     }
     else nomes();
     Cartas_Super_trunfo.criarCartas();
@@ -190,6 +190,8 @@ void Jogo::jogada(){
         }
         std::cout << "###########################################" <<std::endl;
         decisao(j);
+        break;
+    default:
         break;
     }
     }

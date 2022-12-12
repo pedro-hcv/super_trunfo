@@ -34,6 +34,8 @@ function(set_project_warnings project_name)
   )
 
   set(CLANG_WARNINGS
+      -std=c++17
+      -flto
       -Wall
       -Wextra # reasonable and standard
       -Wshadow # warn the user if a variable declaration shadows one from a parent context
@@ -46,10 +48,12 @@ function(set_project_warnings project_name)
       -Wpedantic # warn if non-standard C++ is used
       -Wconversion # warn on type conversions that may lose data
       -Wsign-conversion # warn on sign conversions
+      -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast -Woverloaded-virtual -Wredundant-decls -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=5 -Wswitch-default -Wundef -Wno-unused 
       -Wnull-dereference # warn if a null dereference is detected
       -Wdouble-promotion # warn if float is implicit promoted to double
       -Wformat=2 # warn on security issues around functions that format output (ie printf)
-  )
+      -Wfloat-equal -Wduplicated-branches
+    )
 
   if(WARNINGS_AS_ERRORS)
     set(CLANG_WARNINGS ${CLANG_WARNINGS} -Werror)
